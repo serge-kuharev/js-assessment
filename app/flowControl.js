@@ -13,11 +13,11 @@ define(function() {
       // was provided or the value provided is not a number
       
       if (num % 15 === 0) {
-        return "fizzbuzz";
+        return 'fizzbuzz';
       } else if (num % 3 === 0) {
-        return "fizz";
+        return 'fizz';
       } else if (num % 5 === 0) {
-        return "buzz";
+        return 'buzz';
       } else {
         return isNaN(num) ? false : num;
       }

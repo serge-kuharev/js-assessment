@@ -8,9 +8,9 @@ define(function() {
             greeting: str1,
             
             sayIt: function() {
-                return this.greeting + ", " + this.name;
+                return this.greeting + ', ' + this.name;
             }
-        }
+        };
     }
   };
 });

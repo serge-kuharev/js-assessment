@@ -84,7 +84,7 @@ define(function() {
             len = arr.length;
 
         arr.forEach(function(item, index) {
-            if (dups[item] == null) {
+            if (dups[item] === undefined) {
                 dups[item] = 0;
             } else {
                 dups[item]++;

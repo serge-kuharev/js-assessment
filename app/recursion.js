@@ -6,12 +6,12 @@ define(function() {
             var res = [];
 
             // If we have correct directory, then don't use directory parameter for subfolders.
-            if (dirName && data["dir"] === dirName) {
+            if (dirName && data['dir'] === dirName) {
                     dirName = null;
                 }
 
-                data["files"].forEach(function(value) {
-                    if (typeof value === "object") {
+                data['files'].forEach(function(value) {
+                    if (typeof value === 'object') {
                         res = res.concat(lf(value, dirName));
                     } else if (!dirName) {
                         res.push(value);

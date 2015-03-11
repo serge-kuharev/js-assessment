@@ -14,7 +14,7 @@ define(function() {
         var res = [];
 
         Object.getOwnPropertyNames(obj).forEach(function(value) {
-            res.push(value + ": " + obj[value]);
+            res.push(value + ': ' + obj[value]);
         });
 
         return res;

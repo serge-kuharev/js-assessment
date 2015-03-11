@@ -3,15 +3,15 @@ if (typeof define !== 'function') { var define = require('amdefine')(module); }
 define(function() {
   return {
     containsNumber : function(str) {
-        return /\d/.test(str);
+        return (/\d/).test(str);
     },
 
     containsRepeatingLetter : function(str) {
-        return /([a-z])\1/i.test(str);
+        return (/([a-z])\1/i).test(str);
     },
 
     endsWithVowel : function(str) {
-        return /[aeiou]$/i.test(str);
+        return (/[aeiou]$/i).test(str);
     },
 
     captureThreeNumbers : function(str) {
@@ -22,7 +22,7 @@ define(function() {
 
     matchesPattern : function(str) {
         //XXX-XXX-XXXX format
-        return /^\d{3}-\d{3}-\d{4}$/.test(str);
+        return (/^\d{3}-\d{3}-\d{4}$/).test(str);
     },
     isUSD : function(str) {
         var pattern = /^\$(\d{1,3})(,\d{3})*(\.\d{2})?$/;

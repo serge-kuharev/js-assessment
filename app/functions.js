@@ -12,8 +12,8 @@ define(function() {
 
     functionFunction : function(str) {
         return function(str2) {
-            return str + ", " + str2;
-        }
+            return str + ', ' + str2;
+        };
     },
 
     makeClosures : function(arr, fn) {
@@ -31,7 +31,7 @@ define(function() {
     partial : function(fn, str1, str2) {
         return function(str3) {
             return fn(str1, str2, str3);
-        }
+        };
     },
 
     useArguments : function() {
@@ -54,12 +54,12 @@ define(function() {
         return function() {            
             var joinedArgs = args.concat(Array.prototype.slice.call(arguments));
             return fn.apply(fn, joinedArgs);
-        }
+        };
     },
 
     curryIt : function(fn) {
-        function applyArgs(fn, arguments) {
-            return fn.apply(null, arguments);
+        function applyArgs(fn, args) {
+            return fn.apply(null, args);
         }
 
         function getSavedArgs(savedArguments, argCount) {
